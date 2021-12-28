@@ -26,7 +26,7 @@
                         <input type="text" name="telefone" id="telefone" data-mask="(99)99999-9999"><br><br>
                     </div>
                     <div>
-                        <label for="">Pagamento em dia:</label>
+                        <label for="">Pagamento em dia:</label><br>
                         <select name="pagamento" id="pagamento">
                             <option value="" selected></option>
                             <option value="Sim">Sim</option>

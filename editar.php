@@ -8,7 +8,7 @@ $sql = "SELECT * FROM alunos WHERE id = " .$id;
 $resultSet = mysqli_query($conn, $sql);
 
 if(mysqli_num_rows($resultSet) == 0){
-    echo "Nenhuma movimentação encontrada";
+    echo "<div class= mensagem>Nenhuma movimentação encontrada</div>";
     exit;
 }
 

@@ -15,9 +15,9 @@
     $sql = "UPDATE alunos SET id = '".$id."', nome = '".$nome."', email = '".$email."', turma = '".$turma."', nomeresp = '".$nomeresp."', cpfresp = '".$cpfresp."', telefone = '".$telefone."', pagamento = '".$pagamento."'";
 
     if(mysqli_query($conn, $sql)){
-        echo "Cadastro editado com sucesso!";
+        echo "<div class= mensagem>Cadastro editado com sucesso!</div>";
     }else{
-        echo "Cadastro não pode ser editado!";
+        echo "<div class= mensagem>Cadastro não pode ser editado!</div>";
     }
 
     mysqli_close($conn);

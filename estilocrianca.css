@@ -71,17 +71,14 @@
         font-weight: bold;
         width: 32rem;
     }
-    #conteudo form input{
+    #conteudo form input, select{
         padding: 0.5rem;
         width: 30rem;
         border-radius: 5px;
         border: 1px solid black;
     }
-    #conteudo form select{
-        width: 10rem;
-    }
     #conteudo form #btn{
-        width: 15rem;
+        width: 30rem;
         background-color: green;
         color: white;
         cursor: pointer;
@@ -93,6 +90,13 @@
         margin: 1rem auto;
         width: 20rem;
         color: red;
+    }
+    .mensagem{
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 1rem auto;
+        padding: 0.5rem;
+        text-align: center;
     }
     #rodape{
         background-color: green;
@@ -116,6 +120,7 @@
         width: 100%;
         border-collapse: collapse;
         margin-top: 2rem;
+        font-size: 0.8rem;
     }
     tr, th,td{
         border: 1px solid black;
@@ -126,7 +131,7 @@
         color: white;
     }
     .btn, a.btn{
-        padding: 7px;
+        padding: 5px;
         color: white;
         text-decoration: none;
         outline: none;
@@ -135,9 +140,11 @@
     }
     .btn-edit, a.btn-edit{
         background-color: #ffea00;
+        border-radius: 5px;
     }
     .btn-remove, a.btn-remove{
         background-color: #c43;
+        border-radius: 5px;
     }
 
     @media (max-width: 1500px){

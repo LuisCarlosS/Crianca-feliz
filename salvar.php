@@ -1,7 +1,7 @@
 <?php require_once "components/topo.php"; ?>
 <?php
 
-    require_once "./funcoes/conexoes.php";
+    require_once "funcoes/conexoes.php";
 
     $nome = trim($_POST["nome"]);
     $email = trim($_POST["email"]);
@@ -11,12 +11,12 @@
     $telefone = trim($_POST["telefone"]);
     $pagamento = trim($_POST["pagamento"]);
 
-    $sql = "INSERT INTO alunos VALUES(NULL, '".$nome."', '".$email."', '".$turma."', '".$nomeresp."', '".$cpfresp."', '".$telefone."', '".$pagamento."', now())";
+    $sql = "INSERT INTO alunos VALUES(NULL, '".$nome."', '".$email."', '".$turma."', '".$nomeresp."', '".$cpfresp."', '".$telefone."', '".$pagamento."')";
 
     if(mysqli_query($conn, $sql)){
-        echo "<p>Dados de: " . $nome . ", enviados com sucesso!</p>";
+        echo "<div class= mensagem>Dados de " . $nome . " enviados com sucesso!</div>";
     }else{
-        echo "<p>Não pode cadastrar o aluno</p>";
+        echo "<div class= mensagem>Não foi possível cadastrar o aluno!</div>";
     }
 
     mysqli_close($conn);

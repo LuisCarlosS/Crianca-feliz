@@ -48,7 +48,7 @@
 </table>
 <?php
     }else{
-        echo "<p>Nenhuma movimentação encontrada no banco de dados</p>";
+        echo "<div class= mensagem>Nenhuma movimentação encontrada no banco de dados!</div>";
     }
 ?>
 <?php require_once "components/rodape.php"; ?>
